@@ -9,3 +9,4 @@ console.log(sum2); // 12346
 //parseInt("123abc"); // 123
 console.log(parseInt("123a2bc")); // 123
 console.log(parseInt("abc123")); // NaN
+console.log(parseInt("12.34")); // 12 
