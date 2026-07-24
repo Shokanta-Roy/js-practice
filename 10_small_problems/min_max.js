@@ -8,7 +8,6 @@ function askQuestion(query) {
     return new Promise(resolve => 
         rl.question(query, resolve));
 }
-
 async function main() {
     let num1 = await askQuestion("Enter the first number: ");
     let num2 = await askQuestion("Enter the second number: ");
