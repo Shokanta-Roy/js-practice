@@ -34,3 +34,8 @@ const multi = (a,b) => {
     return a*b;
 }
 console.log(multi(4,5));
+
+const square = (x) => {
+    return x*x;
+}
+console.log(square(5));
