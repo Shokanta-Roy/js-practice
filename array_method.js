@@ -8,8 +8,6 @@
 // //arrow version
 // numbers.forEach((num) => console.log(num));
 
-
-
 //map()
 //creates a new array
 //works on every element of the array
@@ -17,8 +15,6 @@
 // const numbers = [1, 2, 3, 4];
 // const doubled = numbers.map((num) => num * 2);
 // console.log(doubled);
-
-
 
 //filter()
 //creates a new array
@@ -28,10 +24,44 @@
 // const evenChecker = numbers.filter(num => num%2 === 0);
 // console.log(evenChecker);
 
-
-
 //reduce()--- reduce to single value
 //it return only one value
-Array.reduce((accumulator, currentValue) => {
-    return updatedValue;
-}, initialValue);
+// array.reduce((accumulator, currentValue) => {
+//   return updatedValue;
+// }, initialValue);
+// const numbers = [1,2,3,4];
+// const sum = numbers.reduce((total, num) => {
+//     return total+num;
+// },0);
+// console.log(sum);
+
+//find()
+//returns only the first matched with the condition
+// i will use it if I need to get one matching element
+// const numbers = [3,7,11,10,15];
+// const result = numbers.find(num => num>8);
+// console.log(result);
+
+//real life example
+const users = [
+  { name: "John", age: 20 },
+  { name: "Sara", age: 25 },
+  { name: "Mike", age: 17 },
+];
+
+// 1. Get names
+const names = users.map((user) => user.name);
+
+// 2. Adults only
+const adults = users.filter((user) => user.age >= 18);
+
+// 3. Total age
+const totalAge = users.reduce((sum, user) => sum + user.age, 0);
+
+// 4. Find first minor
+const minor = users.find((user) => user.age < 18);
+
+console.log(names);
+console.log(adults);
+console.log(totalAge);
+console.log(minor);
