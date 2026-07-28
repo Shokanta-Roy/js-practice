@@ -39,3 +39,19 @@ console.log("Math = " + math);
 
 
 
+//Array Destructuring 
+//basic 
+const numbers = [10, 20, 30, 40, 50]; 
+console.log(numbers);
+// const [a,b,C] = numbers; 
+// console.log(a);
+// console.log(b);
+// console.log(C);
+// //skip values 
+const [a, ,c, ,e] = numbers;
+console.log(e);
+//default values
+const [x,y,z=100] = [1,2]; 
+console.log(x);
+console.log(y);
+console.log(z);
