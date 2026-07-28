@@ -55,3 +55,17 @@ const [x,y,z=100] = [1,2];
 console.log(x);
 console.log(y);
 console.log(z);
+
+
+
+//Destructuring in Functions
+//object in function
+function printUser({name, age}) {
+    console.log(name,)
+}
+printUser({name: "Jhon", age: 25});
+//arrai in function
+function sum([a,b]) {
+    return a+b;
+}
+console.log(sum([10,20]));
