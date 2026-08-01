@@ -38,4 +38,19 @@ console.log(food);
 // console.log(newUser);
 
 
-//rest = bundles seperate elements into an array
+//rest operator = (...rest) allow a function work with
+//                a variable number of arguments by 
+//                bounding them into a array   
+
+function openFridge(... foods) {
+    console.log(...foods)
+}
+
+const food1 = "pizza";
+const food2 = "burger";
+const food3 = "hotdog";
+
+openFridge(food1,food2,food3);
+
+//  Spread = used when calling / creating
+//  Rest = used when receiving / extracting
