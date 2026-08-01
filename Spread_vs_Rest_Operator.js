@@ -15,9 +15,13 @@ let userName = "shokanta";
 let letters = [...userName].join("-");
 console.log(letters);
 
+let fruits = ["apple", "banana", "orange"];
+let vegetables = ["potato", "tomato", "chili"];
+let food = [...fruits, ...vegetables];
 
-
-
+console.log(fruits);
+console.log(vegetables);
+console.log(food);
 
 // const arr1 = [1, 2];
 // const arr2 = [...arr1, 3, 4];
